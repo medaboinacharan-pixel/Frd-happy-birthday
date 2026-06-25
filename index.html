@@ -12,8 +12,8 @@
         rel="stylesheet">
     <style>
         :root {
-            --accent: #ff2d55;
-            --accent-glow: rgba(255, 45, 85, 0.5);
+            --accent: #f35f5f;
+            --accent-glow: rgba(255, 107, 107, 0.5);
             --gold: #d4af37;
             --glass: rgba(255, 255, 255, 0.05);
             --glass-border: rgba(255, 255, 255, 0.1);
@@ -94,15 +94,15 @@
 
         @keyframes neonPulse {
             0% {
-                box-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent);
+                box-shadow: 0 0 5px #ff2d55, 0 0 10px #ff2d55;
             }
 
             50% {
-                box-shadow: 0 0 20px var(--accent), 0 0 40px var(--accent);
+                box-shadow: 0 0 20px #ff2d55, 0 0 40px #ff2d55;
             }
 
             100% {
-                box-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent);
+                box-shadow: 0 0 5px #ff2d55, 0 0 10px #ff2d55;
             }
         }
 
@@ -159,7 +159,7 @@
             font-weight: 600;
             color: white;
             background: transparent;
-            border: 1px solid var(--accent);
+            border: 1px solid #ff2d55;
             border-radius: 50px;
             cursor: pointer;
             text-transform: uppercase;
@@ -170,9 +170,9 @@
         }
 
         .btn-neon:hover {
-            background: var(--accent);
-            color: #fff;
-            box-shadow: 0 0 50px var(--accent);
+            background: #ff2d55;
+            color: white;
+            box-shadow: #ff2d55 0 0 20px, #ff2d55 0 0 40px, #ff2d55 0 0 60px;
         }
 
         /* --- SLIDER MESSAGE CARD --- */
@@ -237,9 +237,9 @@
         }
 
         .dot.active {
-            background: var(--accent);
+            background: #ff2d55;
             transform: scale(1.5);
-            box-shadow: 0 0 10px var(--accent-glow);
+            box-shadow: 0 0 10px #ff2d55;
         }
 
         /* --- Password Page --- */
@@ -262,7 +262,7 @@
         .password-title {
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
-            color: var(--accent);
+            color: var(--white);
             margin-bottom: 10px;
             font-weight: 700;
         }
@@ -281,7 +281,7 @@
             font-size: 1.1rem;
             border: 2px solid rgba(255, 45, 85, 0.3);
             border-radius: 12px;
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(254, 37, 37, 0.08);
             color: white;
             margin-bottom: 30px;
             font-family: 'Montserrat', sans-serif;
@@ -291,10 +291,10 @@
         }
 
         .password-input:focus {
-            outline: none;
-            border-color: var(--accent);
-            background: rgba(255, 255, 255, 0.12);
-            box-shadow: 0 0 20px var(--accent-glow);
+            outline: #ff2d55;
+            border-color: #ff2d55;
+            background: rgba(252, 76, 76, 0.12);
+            box-shadow: 0 0 20px #ff2d55;
         }
 
         .password-input::placeholder {
@@ -302,7 +302,7 @@
         }
 
         .password-error {
-            color: #ff6b6b;
+            color: #ff2d55;
             font-size: 0.9rem;
             margin-bottom: 20px;
             display: none;
@@ -359,9 +359,9 @@
         }
 
         .bright .bulb-teardrop {
-            background: radial-gradient(circle at 30% 30%, #fff, var(--bulb-warm) 60%, #b8860b);
-            box-shadow: 0 0 15px var(--bulb-glow), 0 0 30px var(--bulb-glow);
-            animation: flicker var(--d) infinite alternate;
+            background: radial-gradient(circle at 30% 30%, #fff, #ffde6b 60%, #b8860b);
+            box-shadow: 0 0 15px #ffde6b, 0 0 30px #ffde6b, 0 0 50px #ffde6b;
+            animation: flicker #ffde6b infinite alternate;
         }
 
         /* --- REALISTIC BALLOONS --- */
@@ -503,10 +503,10 @@
         .gallery-title {
             font-family: 'Dancing Script', cursive;
             font-size: clamp(2.5rem, 6vw, 4rem);
-            color: orange;
+            color: #ff2d55;
             text-align: center;
             margin-bottom: 60px;
-            text-shadow: 0 0 20px var(--accent-glow);
+            text-shadow: 0 0 20px #ff2d55;
         }
 
         .gallery-grid {
@@ -531,8 +531,8 @@
 
         .memory-card:hover {
             transform: translateY(-15px) scale(1.03);
-            box-shadow: 0 20px 50px orange;
-            border-color: orange;
+            box-shadow: 0 20px 50px #ff2d55;
+            border-color: #ff2d55;
         }
 
         .memory-image {
@@ -572,7 +572,7 @@
             color: #f0eeea;
             text-align: center;
             line-height: 1.4;
-            text-shadow: 0 0 15px var(--accent);
+            text-shadow: 0 0 15px #ff2d55;
             transform: translateY(20px);
             transition: transform 0.5s ease;
         }
@@ -686,7 +686,7 @@
             <div class="secret-content">
                 <div class="message-card" id="message-card">
                     <h2
-                        style="font-family: 'Dancing Script'; font-size: clamp(2rem, 5vw, 3.5rem); color: var(--accent); margin-bottom: 20px;">
+                        style="font-family: 'Dancing Script'; font-size: clamp(2rem, 5vw, 3.5rem); color: #f35f5f; margin-bottom: 20px;">
                         Happy Birthday, Dpi 🧡</h2>
                     <p style="font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.8; color: rgba(255,255,255,0.8);">
                         You came into my life unexpectedly, but I believe you are one of God’s beautiful gifts to me.
@@ -779,7 +779,7 @@
             
             if (input.value.toUpperCase() === CORRECT_PASSWORD) {
                 errorMsg.classList.remove('show');
-                input.style.borderColor = 'var(--accent)';
+                input.style.borderColor = '#ff2d55';
                 input.disabled = true;
                 
                 setTimeout(() => {
